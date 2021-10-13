@@ -27,13 +27,17 @@ class ViewController: UIViewController {
     }
     //Navigation
     func presentAddToDoPopUpController(){
-        
+        if let addNotificationViewcontroller = UIStoryboard.main.instantiateViewController(identifier: "AddPushNotificationViewController") as? AddPushNotificationViewController{
+            addNotificationViewcontroller.modalPresentationStyle = .overFullScreen
+            self.present(addNotificationViewcontroller, animated: false, completion: nil)
+            
+        }
     }
 }
 //Selector Methods
 extension ViewController{
     @IBAction func buttonAddToDoSelector(sender:UIButton){
-        
+        self.presentAddToDoPopUpController()
     }
 }
 

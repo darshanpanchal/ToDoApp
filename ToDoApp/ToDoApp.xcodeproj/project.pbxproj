@@ -14,6 +14,8 @@
 		185336662717447300DF5752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185336652717447300DF5752 /* Assets.xcassets */; };
 		185336692717447300DF5752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185336672717447300DF5752 /* LaunchScreen.storyboard */; };
 		1855574427174D8200BFA14A /* AddPushNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855574327174D8200BFA14A /* AddPushNotificationViewController.swift */; };
+		185557482717532100BFA14A /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185557472717532100BFA14A /* Constant.swift */; };
+		1855574B2717554200BFA14A /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855574A2717554200BFA14A /* UserModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		185336682717447300DF5752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1853366A2717447300DF5752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1855574327174D8200BFA14A /* AddPushNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPushNotificationViewController.swift; sourceTree = "<group>"; };
+		185557472717532100BFA14A /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		1855574A2717554200BFA14A /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,7 @@
 			children = (
 				1853365C2717447100DF5752 /* AppDelegate.swift */,
 				1853365E2717447100DF5752 /* SceneDelegate.swift */,
+				185557462717530900BFA14A /* Constant */,
 				185336BA271748A700DF5752 /* Model */,
 				185336BB271748AE00DF5752 /* View */,
 				185336BC271748BE00DF5752 /* ViewModel */,
@@ -91,6 +96,7 @@
 		185336BB271748AE00DF5752 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1855574A2717554200BFA14A /* UserModel.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -100,6 +106,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		185557462717530900BFA14A /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				185557472717532100BFA14A /* Constant.swift */,
+			);
+			path = Constant;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,7 +188,9 @@
 			files = (
 				185336612717447100DF5752 /* ViewController.swift in Sources */,
 				1855574427174D8200BFA14A /* AddPushNotificationViewController.swift in Sources */,
+				185557482717532100BFA14A /* Constant.swift in Sources */,
 				1853365D2717447100DF5752 /* AppDelegate.swift in Sources */,
+				1855574B2717554200BFA14A /* UserModel.swift in Sources */,
 				1853365F2717447100DF5752 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

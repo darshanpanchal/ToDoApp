@@ -22,10 +22,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                     if let _ = error {
                         //fail to register notification
                     }else{
+                        DispatchQueue.main.async {
+                            application.registerForRemoteNotifications()
+                        }
                         
                     }
                 }
-        application.registerForRemoteNotifications()
+     
         return true
     }
 
