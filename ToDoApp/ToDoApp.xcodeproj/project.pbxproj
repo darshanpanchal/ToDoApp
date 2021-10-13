@@ -13,6 +13,7 @@
 		185336642717447100DF5752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185336622717447100DF5752 /* Main.storyboard */; };
 		185336662717447300DF5752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 185336652717447300DF5752 /* Assets.xcassets */; };
 		185336692717447300DF5752 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 185336672717447300DF5752 /* LaunchScreen.storyboard */; };
+		1855574427174D8200BFA14A /* AddPushNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1855574327174D8200BFA14A /* AddPushNotificationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		185336652717447300DF5752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		185336682717447300DF5752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1853366A2717447300DF5752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1855574327174D8200BFA14A /* AddPushNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddPushNotificationViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +60,46 @@
 			children = (
 				1853365C2717447100DF5752 /* AppDelegate.swift */,
 				1853365E2717447100DF5752 /* SceneDelegate.swift */,
-				185336602717447100DF5752 /* ViewController.swift */,
+				185336BA271748A700DF5752 /* Model */,
+				185336BB271748AE00DF5752 /* View */,
+				185336BC271748BE00DF5752 /* ViewModel */,
+				185336B92717489400DF5752 /* ViewController */,
 				185336622717447100DF5752 /* Main.storyboard */,
-				185336652717447300DF5752 /* Assets.xcassets */,
 				185336672717447300DF5752 /* LaunchScreen.storyboard */,
+				185336652717447300DF5752 /* Assets.xcassets */,
 				1853366A2717447300DF5752 /* Info.plist */,
 			);
 			path = ToDoApp;
+			sourceTree = "<group>";
+		};
+		185336B92717489400DF5752 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				185336602717447100DF5752 /* ViewController.swift */,
+				1855574327174D8200BFA14A /* AddPushNotificationViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		185336BA271748A700DF5752 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		185336BB271748AE00DF5752 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		185336BC271748BE00DF5752 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				185336612717447100DF5752 /* ViewController.swift in Sources */,
+				1855574427174D8200BFA14A /* AddPushNotificationViewController.swift in Sources */,
 				1853365D2717447100DF5752 /* AppDelegate.swift in Sources */,
 				1853365F2717447100DF5752 /* SceneDelegate.swift in Sources */,
 			);
