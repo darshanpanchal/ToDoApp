@@ -7,6 +7,9 @@
 
 import Foundation
 import UIKit
+let kAppDelegate = UIApplication.shared.delegate as? AppDelegate 
+let kUserDefault = UserDefaults.standard
+let kUserDetail = "UserDetail"
 
 extension UIStoryboard{
     class var main:UIStoryboard{
@@ -107,3 +110,4 @@ extension Date{
         return dateFormatter.string(from: formateDate!)
     }
 }
+

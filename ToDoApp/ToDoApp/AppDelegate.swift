@@ -12,7 +12,7 @@ import UserNotifications
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
-
+    var arrayListOfNotification:[UNNotificationRequest] = []
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         //Request for notification permission

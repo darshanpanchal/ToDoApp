@@ -6,7 +6,10 @@
 //
 
 import UIKit
-
+import UserNotifications
+protocol AddPushNotification {
+    func pushNotificationAdded()
+}
 class AddPushNotificationViewController: UIViewController {
 
     @IBOutlet weak var txtNotificationName:UITextField!
@@ -14,6 +17,8 @@ class AddPushNotificationViewController: UIViewController {
     
     var fromDatePicker:UIDatePicker = UIDatePicker()
     var fromDatePickerToolbar:UIToolbar = UIToolbar()
+    
+    var delegate:AddPushNotification?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -93,7 +98,20 @@ extension  AddPushNotificationViewController{
         }
     }
     func addPushNotification(){
-        
+           let content = UNMutableNotificationContent()
+           content.title = "ToDo \(self.fromDatePicker.date)"
+           content.body = "\(self.txtNotificationName.text!)"
+           content.sound = UNNotificationSound.default
+           content.badge = UIApplication.shared.applicationIconBadgeNumber + 1 as NSNumber
+            let componentsFromDate = Calendar.current.dateComponents(in: TimeZone.current, from: self.fromDatePicker.date)
+            let trigger = UNCalendarNotificationTrigger.init(dateMatching: componentsFromDate, repeats: true)
+           let request = UNNotificationRequest.init(identifier: "\(self.fromDatePicker.date)", content: content, trigger: trigger)
+           // Schedule the notification.
+           let center = UNUserNotificationCenter.current()
+           center.add(request)
+           kAppDelegate!.arrayListOfNotification.append(request)
+        self.delegate!.pushNotificationAdded()
+          self.dismiss(animated: true, completion: nil)
     }
     @IBAction func buttonClosePopup(sender:UIButton){
         self.dismiss(animated: true, completion: nil)
